@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Planet Compare</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="Generator" content="https://callum.com">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <!--
+	<script type="text/javascript" src="js/three.r72dev.min.js"></script>
+	-->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/three.min.js"></script>
+    <script type="text/javascript" src="js/Detector.js"></script>
+    <script type="text/javascript" src="js/stats.min.js"></script>
+    <script type="text/javascript" src="js/TrackballControls.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+        <style>
+            .planet1-name {
+                display: inline-block;
+                position: absolute;
+                top: 30%;
+                left: 20%;
+                border: solid 1px #ff0000;
+                font-weight: bold;
+                color: #FFFFFF;
+            }
+            .planet2-name {
+                display: inline-block;
+                position: absolute;
+                top: 30%;
+                left: 80%;
+                border: solid 1px #00ff00;
+                font-weight: bold;
+                color: #FFFFFF;
+            }
+		</style>
+    </head>
+    <body onload="app()">
+        <table id="planet_selector">
+            <tr>
+                <td><a href="#" onClick="select('SUN');"><img src='img/sun_thumb.png'></td>
+                <td><a href="#" onClick="select('MERCURY');"><img src='img/mercury_thumb.png'></td>
+                <td><a href="#" onClick="select('VENUS');"><img src='img/venus_thumb.png'></a></td>
+                <td><a href="#" onClick="select('EARTH');"><img src='img/earth_thumb.png'></a></td>
+                <td><a href="#" onClick="select('MARS');"><img src='img/mars_thumb.png'></a></td>
+                <td><a href="#" onClick="select('JUPITER');"><img src='img/jupiter_thumb.png'></a></td>
+                <td><a href="#" onClick="select('SATURN');"><img src='img/saturn_thumb.png'></a></td>
+                <td><a href="#" onClick="select('URANUS');"><img src='img/uranus_thumb.png'></a></td>
+                <td><a href="#" onClick="select('NEPTUNE');"><img src='img/neptune_thumb.png'></a></td>
+                <td><a href="#" onClick="select('PLUTO');"><img src='img/pluto_thumb.png'></a></td>
+            </tr>
+            <tr>
+                <td><a href="#" onClick="select('SUN');">MATAHARI</a></td>
+                <td><a href="#" onClick="select('MERCURY');">MERCURIUS</a></td>
+                <td><a href="#" onClick="select('VENUS');">VENUS</a></td>
+                <td><a href="#" onClick="select('EARTH');">BUMI</a></td>
+                <td><a href="#" onClick="select('MARS');">MARS</a></td>
+                <td><a href="#" onClick="select('JUPITER');">JUPITER</a></td>
+                <td><a href="#" onClick="select('SATURN');">SATURNUS</a></td>
+                <td><a href="#" onClick="select('URANUS');">URANUS</a></td>
+                <td><a href="#" onClick="select('NEPTUNE');">NEPTUNUS</a></td>
+                <td><a href="#" onClick="select('PLUTO');">PLUTO</a></td>
+            </tr>
+        </table>
+        <table id="planet_selector_description">
+        <tr><td id="planet_selector_description_cell">Pilih Sebuah Planet </td></tr>
+        </table>
+
+
+    
+
+
+
+        <div id='planet1_name' class='planet1-name'>&nbsp;</div>
+        <div id='planet2_name' class='planet2-name'>&nbsp;</div>
+
+    </body>
+</html>
